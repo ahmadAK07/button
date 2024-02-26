@@ -16,7 +16,7 @@
             linear-gradient(to bottom, rgb(211, 209, 209) 1px, transparent 1px);
             background-size: 4vh 4vh;
         }
-        button{
+        a{
             padding: 16px 18px;
             background: transparent;
             color: rgb(10, 196, 10);
@@ -31,8 +31,9 @@
             width: 200px;
             position: relative;
             overflow: hidden;
+            text-decoration: none;
         }
-        button::after{
+        a::after{
             content: '';
             display:block;
             height: 300px;
@@ -45,11 +46,11 @@
             transform: rotate(40deg);
             transition: all .5s;
         }
-        button:hover::after{
+        a:hover::after{
             bottom: -100px;
             left: -150px;
         }
-        button:hover{
+        a:hover{
             color: white;
             border: 1px solid rgb(10, 196, 10);
         }
@@ -58,13 +59,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button>Animate</button>
+    <a href="https://ahmadak07.github.io/button/button-bg-effect.html">Animate</a>
 
-    <script>
-        let btn = document.querySelector('button');
-        btn.addEventListener('click', ()=>{
-            window.location.href = "https://ahmadak07.github.io/button/button-bg-effect.html";
-        })
-    </script>
 </body>
 </html>
